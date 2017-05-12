@@ -2,7 +2,7 @@
 
 Implement Google event tracking for Freeform form submissions
 
-![Screenshot](resources/screenshots/plugin_logo.png)
+![Screenshot](resources/screenshots/screenshot.png)
 
 ## Installation
 
