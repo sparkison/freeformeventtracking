@@ -1,0 +1,28 @@
+{#
+/**
+ * Freeform Event Tracking plugin for Craft CMS
+ *
+ * Freeform Event Tracking Settings.twig
+ *
+ * @author    https://nerdymind.com/
+ * @copyright Copyright (c) 2017 https://nerdymind.com/
+ * @link      https://nerdymind.com/
+ * @package   FreeformEventTracking
+ * @since     1.0.0
+ */
+#}
+
+{% extends "_layouts/cp" %}
+
+{% set title = "Freeform Event Tracking"|t %}
+
+{% set tabs = {
+info: { label: "Info"|t, url: url('freeformeventtracking') },
+config:    { label: "Configure Settings"|t, url: url('settings/plugins/freeformeventtracking') }
+} %}
+
+{% set selectedTab = 'info' %}
+
+{% set content %}
+    <p>Send form events to Google upon successful form submission. Each form can have a unique category, action and label. Will only send events for configured forms. Events are only sent for new submissions, editing a form will not trigger another event to be fired. Can optionally send event data via SSL (server must have valid SSL certificate installed).</p>
+{% endset %}

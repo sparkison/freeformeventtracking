@@ -1,0 +1,63 @@
+{#
+/**
+ * Freeform Event Tracking plugin for Craft CMS
+ *
+ * Freeform Event Tracking Settings.twig
+ *
+ * @author    https://nerdymind.com/
+ * @copyright Copyright (c) 2017 https://nerdymind.com/
+ * @link      https://nerdymind.com/
+ * @package   FreeformEventTracking
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% includeCssResource "freeformeventtracking/css/FreeformEventTracking_Style.css" %}
+{% includeJsResource "freeformeventtracking/js/FreeformEventTracking_Script.js" %}
+
+{{ forms.textField({
+    label: 'Google Analytics Tracking ID',
+    instructions: 'Only enter the ID, e.g.: UA-XXXXXX-XX, not the entire script code. <a href="https://support.google.com/analytics/answer/1032385?hl=en" target="_blank">Here\'s how to get it</a>.',
+    placeholder: 'UA-XXXXXX-XX',
+    id: 'gatId',
+    name: 'gatId',
+    value: settings['gatId']})
+}}
+
+{{ forms.checkboxField({
+    label: 'Submit event data to Google via HTTPS',
+    id: 'useSsl',
+    name: 'useSsl',
+    checked: settings['useSsl']})
+}}
+
+<hr/>
+
+{{ forms.editableTableField({
+    'label': 'Form Tracking Settings',
+    'id': 'formSettings',
+    'name': 'formSettings',
+    'addRowLabel': 'Add form configuration',
+    'cols': {
+        'formId': {
+            'heading': 'Form ID (in Freeform)',
+            'type': 'singleline',
+        },
+        'formCategory': {
+            'heading': 'Category',
+            'type': 'singleline',
+        },
+        'formAction': {
+            'heading': 'Action',
+            'type': 'singleline',
+        },
+        'formLabel': {
+            'heading': 'Label (optional)',
+            'type': 'singleline',
+        },
+    },
+    'rows': settings.formSettings,
+    'instructions': 'Add configurations for individual forms (note: to get the Form ID, go to <strong><a href="/admin/freeform/forms" target="_blank">Freeform > Forms</a></strong> and the ID will be the last URL segment on the form edit page).'
+}) }}

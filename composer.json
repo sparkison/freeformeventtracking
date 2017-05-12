@@ -1,0 +1,15 @@
+{
+	"name": "/freeformeventtracking",
+	"description": "Implement Google event tracking for Freeform form submissions",
+	"type": "craft-plugin",
+	"authors": [
+		{
+			"name": "https://nerdymind.com/",
+			"homepage": "https://nerdymind.com/"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0",
+		"ins0/google-measurement-php-client": "^2.2"
+	}
+}
