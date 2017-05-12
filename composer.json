@@ -1,5 +1,5 @@
 {
-	"name": "/freeformeventtracking",
+	"name": "sparkison/freeformeventtracking",
 	"description": "Implement Google event tracking for Freeform form submissions",
 	"type": "craft-plugin",
 	"authors": [
