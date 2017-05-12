@@ -168,7 +168,7 @@ class FreeformEventTrackingPlugin extends BasePlugin
      */
     public function getDocumentationUrl()
     {
-        return '???';
+        return 'https://github.com/sparkison/freeformeventtracking/blob/master/README.md';
     }
 
     /**
@@ -180,7 +180,7 @@ class FreeformEventTrackingPlugin extends BasePlugin
      */
     public function getReleaseFeedUrl()
     {
-        return '???';
+        return 'https://github.com/sparkison/freeformeventtracking/blob/master/releases.json';
     }
 
     /**
@@ -190,7 +190,7 @@ class FreeformEventTrackingPlugin extends BasePlugin
      */
     public function getVersion()
     {
-        return '1.0.0';
+        return '1.0.1';
     }
 
     /**
@@ -203,7 +203,7 @@ class FreeformEventTrackingPlugin extends BasePlugin
      */
     public function getSchemaVersion()
     {
-        return '1.0.0';
+        return '1.0.1';
     }
 
     /**

@@ -18,19 +18,20 @@ Freeform Event Tracking works on Craft 2.4.x and Craft 2.5.x.
 
 ## Freeform Event Tracking Overview
 
--Insert text here-
+Allows for sending custom events to Google upon successful form submission. Will not send subsequent event if form is being updated.
+Includes ability to only send events for specific forms by form id.
 
 ## Configuring Freeform Event Tracking
 
--Insert text here-
+Navigate to  **Settings > Freeform Event Tracking** to configure.
 
 ## Using Freeform Event Tracking
 
--Insert text here-
+Once configured, you should be good to go! Events will now be sent to Google upon successfuly form submission.
 
 ## Freeform Event Tracking Roadmap
 
-Some things to do, and ideas for potential features:
+Currently the event response is logged to the database. Will be adding an additional tab to review the log at some point...
 
 * Release it
 
