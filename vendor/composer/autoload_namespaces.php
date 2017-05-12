@@ -7,4 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Racecore\\GATracking' => array($vendorDir . '/ins0/google-measurement-php-client/src'),
+    'Guzzle\\Tests' => array($vendorDir . '/guzzle/guzzle/tests'),
+    'Guzzle' => array($vendorDir . '/guzzle/guzzle/src'),
 );

@@ -10,6 +10,7 @@
 	],
 	"require": {
 		"composer/installers": "~1.0",
-		"ins0/google-measurement-php-client": "^2.2"
+		"ins0/google-measurement-php-client": "^2.2",
+		"guzzle/guzzle": "^3.9"
 	}
 }

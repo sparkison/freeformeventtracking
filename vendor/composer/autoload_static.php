@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInitedde8a49a0469b24549076822f5c7326
 {
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Symfony\\Component\\EventDispatcher\\' => 34,
+        ),
         'C' => 
         array (
             'Composer\\Installers\\' => 20,
@@ -14,6 +18,10 @@ class ComposerStaticInitedde8a49a0469b24549076822f5c7326
     );
 
     public static $prefixDirsPsr4 = array (
+        'Symfony\\Component\\EventDispatcher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
+        ),
         'Composer\\Installers\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
@@ -26,6 +34,17 @@ class ComposerStaticInitedde8a49a0469b24549076822f5c7326
             'Racecore\\GATracking' => 
             array (
                 0 => __DIR__ . '/..' . '/ins0/google-measurement-php-client/src',
+            ),
+        ),
+        'G' => 
+        array (
+            'Guzzle\\Tests' => 
+            array (
+                0 => __DIR__ . '/..' . '/guzzle/guzzle/tests',
+            ),
+            'Guzzle' => 
+            array (
+                0 => __DIR__ . '/..' . '/guzzle/guzzle/src',
             ),
         ),
     );
